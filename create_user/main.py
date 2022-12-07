@@ -7,7 +7,6 @@ lst = []
 for x in lines:
     lst.append(x.replace('\n', " "))
 
-
 def email_splitter(email):
     password = email.split()[1]
     username = email.split('@')[0]
@@ -16,15 +15,11 @@ def email_splitter(email):
     domain = email.split('@')[1]
     domain_1 = domain.split(' ')[0]
 
-
     print('Username : ', username)
     print('Vorname : ', vorname)
     print('Nachname :', nachname)
     print('Domain :', domain_1)
     print('Password : ', password,'\n')
-
-
-
 
 for i in range(0, len(lst), 2):
     new_list = ''.join(lst[i:i + 2])
